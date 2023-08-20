@@ -1,15 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="ChatGPTRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/chatbot/chatgpt.go" />
+              <option value="file://$PROJECT_DIR$/chatgpt/chatgpt.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ChatGPTResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/chatbot/chatgpt.go" />
+              <option value="file://$PROJECT_DIR$/chatgpt/chatgpt.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="scannedPathMapping">
       <map>
-        <entry key="file://$PROJECT_DIR$/main.go">
+        <entry key="file://$PROJECT_DIR$/chat_gpt_supabase.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1692513339683" />
+              <option name="lastModified" value="1692524767174" />
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/chatbot/chatgpt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1692526201864" />
+              <option name="schema">
+                <list>
+                  <option value="ChatGPTRequest" />
+                  <option value="ChatGPTResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/chatgpt/chatgpt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1692525830975" />
+              <option name="schema">
+                <list>
+                  <option value="ChatGPTRequest" />
+                  <option value="ChatGPTResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1692526208115" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="chat_gpt_request" value="ChatGPTRequest" />
+        <entry key="chat_gpt_response" value="ChatGPTResponse" />
       </map>
     </option>
     <option name="lastTimeChecked" value="1692512536108" />

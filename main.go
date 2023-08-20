@@ -8,6 +8,7 @@ import (
 
 	"github.com/PullRequestInc/go-gpt3"
 	"github.com/joho/godotenv"
+	"github.com/sutin1234/go-chatbot-gpt3/chatbot"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	apiKey := os.Getenv("API_KEY")
+	apiKey := os.Getenv("CHAT_GPT_API_KEY")
 	if apiKey == "" {
 		log.Fatal("Missing API_KEY in .env file")
 	}
@@ -34,4 +35,10 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(resp.Choices[0].Text)
+
+	text, err := chatbot.AutoCompletions("Hello Chat GPT")
+	if err != nil {
+		log.Fatal("Cannot fetch autocompletion", err)
+	}
+	fmt.Printf("Chatbot: %s", text)
 }
