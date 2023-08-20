@@ -10,7 +10,7 @@ import (
 )
 
 func fetchSupabaseData() ([]byte, error) {
-	url := fmt.Sprintf("%s/table_name", os.Getenv("SUPABASE_URL")) // Replace 'table_name' with your table name
+	url := fmt.Sprintf("%s/chatbot", os.Getenv("SUPABASE_URL")) // Replace 'table_name' with your table name
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
