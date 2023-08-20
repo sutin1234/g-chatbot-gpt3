@@ -36,6 +36,22 @@ func main() {
 	}
 	fmt.Println(resp.Choices[0].Text)
 
+	// check env
+	supabaseURL := os.Getenv("SUPABASE_URL")
+	if supabaseURL == "" {
+		log.Fatal("supabaseURL missing in .env")
+	}
+
+	supabaseAPIKey := os.Getenv("SUPABASE_API_KEY")
+	if supabaseAPIKey == "" {
+		log.Fatal("supabaseAPIKey missing in .env")
+	}
+
+	chatGptCompletionURL := os.Getenv("CHAT_GPT_COMPLETION_URL")
+	if chatGptCompletionURL == "" {
+		log.Fatal("chatGptCompletionURL missing in .env")
+	}
+
 	text, err := chatbot.AutoCompletions("Hello Chat GPT")
 	if err != nil {
 		log.Fatal("Cannot fetch autocompletion", err)
