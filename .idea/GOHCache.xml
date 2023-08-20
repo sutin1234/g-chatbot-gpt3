@@ -33,7 +33,7 @@
         <entry key="file://$PROJECT_DIR$/chatbot/chatgpt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1692526201864" />
+              <option name="lastModified" value="1692526374763" />
               <option name="schema">
                 <list>
                   <option value="ChatGPTRequest" />
